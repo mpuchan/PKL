@@ -3,8 +3,8 @@ load "Computer/Cpu/Amd.rb"
 class Komputer
   
   def cpu
-    serie =['Intel','Amd']
-    2.times do |i|
+    serie =['Intel','Amd','Exit']
+    3.times do |i|
       puts "#{i+1}. #{serie[i]}"
     end
       print "Masukan pilihan  : "
@@ -53,6 +53,8 @@ class Komputer
       elsif milih == 8
         comp= Amd.new.ryzen7
       end
+      elsif pilihan == 3 
+        
       end
   end
 end
